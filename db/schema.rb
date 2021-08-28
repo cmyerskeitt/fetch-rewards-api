@@ -10,12 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_27_030515) do
+ActiveRecord::Schema.define(version: 2021_08_28_182439) do
 
-  create_table "users", force: :cascade do |t|
+  create_table "transactions", force: :cascade do |t|
     t.string "payer"
     t.integer "points"
     t.datetime "timestamp"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.integer "points"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
