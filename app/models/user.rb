@@ -4,7 +4,7 @@ class User < ApplicationRecord
 
 
     def update_points(transaction)
-       if self.points >= transaction.points 
+       if self.points > transaction.points 
         self.points = self.points + transaction.points 
         self.save
        else 
