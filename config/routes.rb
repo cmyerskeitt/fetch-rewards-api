@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  namespae :api do 
-    namspace :v1 do 
+  namespace :api do 
+    namespace :v1 do 
       resources :transactions
       resources :users
     end 

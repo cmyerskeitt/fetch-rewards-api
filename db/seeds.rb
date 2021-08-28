@@ -5,11 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-user1 = User.
+# user1 = User.create(points: 0)
+# user2 = User.create(points: 100)
+# user3 = User.create(points: 0)
 
-
-User.create("payer": "DANNON", "points": 1000, "timestamp": "2020-11-02T14:00:00Z")
-User.create("payer": "UNILEVER", "points": 200, "timestamp": "2020-10-31T11:00:00Z" )
-User.create("payer": "DANNON", "points": -200, "timestamp": "2020-10-31T15:00:00Z" )
-User.create("payer": "MILLER COORS", "points": 10000, "timestamp": "2020-11-01T14:00:00Z" )
-User.create("payer": "DANNON", "points": 300, "timestamp": "2020-10-31T10:00:00Z" )
+# transaction1 = Transaction.create("payer": "DANNON", "points": 1000, "timestamp": "2020-11-02T14:00:00Z")
+# transaction2 = Transaction.create("payer": "UNILEVER", "points": 200, "timestamp": "2020-10-31T11:00:00Z" )
+# transaction3 = Transaction.create("payer": "DANNON", "points": -200, "timestamp": "2020-10-31T15:00:00Z" )
+# transaction4 = Transaction.create("payer": "MILLER COORS", "points": 10000, "timestamp": "2020-11-01T14:00:00Z" )
+# transaction5 = Transaction.create("payer": "DANNON", "points": 300, "timestamp": "2020-10-31T10:00:00Z" )
