@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 2021_08_28_190021) do
     t.datetime "timestamp"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "users_id", null: false
-    t.index ["users_id"], name: "index_transactions_on_users_id"
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_transactions_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -28,5 +28,5 @@ ActiveRecord::Schema.define(version: 2021_08_28_190021) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "transactions", "users", column: "users_id"
+  add_foreign_key "transactions", "users"
 end
