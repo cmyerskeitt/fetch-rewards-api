@@ -12,7 +12,7 @@ class Api::V1::TransactionsController < ApplicationController
     end 
 
     def create 
-        @transaction = @user.transactions.new(transaction_params)
+        @transaction = @user.transactions.build(transaction_params)
         if @user.update_points(@transaction) != "Your balance is too low!"
             @transaction.save
             render json: @transaction
