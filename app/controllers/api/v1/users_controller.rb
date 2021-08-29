@@ -6,22 +6,22 @@ class Api::V1::UsersController < ApplicationController
     end 
 
     def create 
-        user = User.new(user_params)
+        @user = User.new(user_params)
         if users.save
             render json:  @users 
         else 
-            render json: {error: 'Error creating user'}
+            render json: {error: 'Error creating User!'}
         end 
     end 
 
     def show 
-        user = User.find(params[:id])
+        @user = User.find(params[:id])
         render json: @users 
     end 
 
     def destroy
-        @users  = User.find(params[:id])
-        @users .destroy
+        @user = User.find(params[:id])
+        @user.destroy
     end 
 
     private 
